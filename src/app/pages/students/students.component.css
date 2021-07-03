@@ -1,0 +1,95 @@
+.students-gallery {
+  padding: 0;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(280px, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.2rem;
+  margin: 2rem 0;
+}
+
+.students-gallery .content {
+  background: #f9f9fb;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding: 5px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.students-gallery .delete-button {
+  padding: 2px;
+  font-size: 10px;
+  background-color: red;
+  height: 15px;
+  width: 15px;
+  text-align: center;
+}
+
+.students-gallery .student-card {
+  padding: 1rem;
+  -webkit-box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0);
+          box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0);
+  -webkit-transition: -webkit-box-shadow 300ms;
+  transition: -webkit-box-shadow 300ms;
+  transition: box-shadow 300ms;
+  transition: box-shadow 300ms, -webkit-box-shadow 300ms;
+  border-radius: 10px;
+}
+
+.students-gallery .student-card:hover {
+  -webkit-box-shadow: 0 10px 15px 0 rgba(0, 0, 0, 0.25);
+          box-shadow: 0 10px 15px 0 rgba(0, 0, 0, 0.25);
+}
+
+.students-gallery .student-card h2 {
+  font-size: 19px;
+}
+
+.students-gallery .student-card h3 {
+  font-size: 15px;
+  opacity: .5;
+}
+
+.students-gallery .student-card header {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 35px 1fr;
+      grid-template-columns: 35px 1fr;
+  gap: 15px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.55);
+  padding-bottom: 10px;
+}
+
+.students-gallery .student-card header img {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+}
+
+.students-gallery .student-card p {
+  margin: 1rem 0 .6rem 0;
+  word-break: break-word;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+ul li {
+  list-style: none;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+ul li a {
+  color: currentColor;
+}
+/*# sourceMappingURL=students.component.css.map */
