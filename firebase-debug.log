@@ -47,3 +47,49 @@
     at async C:\Users\milan\AppData\Roaming\npm\node_modules\firebase-tools\lib\command.js:169:17
 [error] 
 [error] Error: Failed to get Firebase project ngclassbook. Please make sure the project exists and your account has permission to access it.
+[debug] [2021-07-03T07:26:04.750Z] ----------------------------------------------------------------------
+[debug] [2021-07-03T07:26:04.753Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\milan\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2021-07-03T07:26:04.753Z] CLI Version:   9.14.0
+[debug] [2021-07-03T07:26:04.753Z] Platform:      win32
+[debug] [2021-07-03T07:26:04.753Z] Node Version:  v14.17.1
+[debug] [2021-07-03T07:26:04.755Z] Time:          Sat Jul 03 2021 10:26:04 GMT+0300 (Израиль, летнее время)
+[debug] [2021-07-03T07:26:04.755Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2021-07-03T07:26:04.769Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-07-03T07:26:04.769Z] > authorizing via signed-in user (milana.l890@gmail.com)
+[debug] [2021-07-03T07:26:04.770Z] [iam] checking project ngclassbook for permissions ["datastore.indexes.create","datastore.indexes.delete","datastore.indexes.list","datastore.indexes.update","firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2021-07-03T07:26:04.771Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2021-07-03T07:26:04.772Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-07-03T07:26:05.142Z] <<< HTTP RESPONSE 200 {"cache-control":"no-cache, no-store, max-age=0, must-revalidate","date":"Sat, 03 Jul 2021 07:26:04 GMT","pragma":"no-cache","expires":"Mon, 01 Jan 1990 00:00:00 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-07-03T07:26:05.166Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/ngclassbook:testIamPermissions  
+ {"permissions":["datastore.indexes.create","datastore.indexes.delete","datastore.indexes.list","datastore.indexes.update","firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2021-07-03T07:26:06.151Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sat, 03 Jul 2021 07:26:05 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=660","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-07-03T07:26:06.153Z] [iam] error while checking permissions, command may fail: FirebaseError: Authorization failed. This account is missing the following required permissions on project ngclassbook:
+
+  datastore.indexes.create
+  datastore.indexes.delete
+  datastore.indexes.list
+  datastore.indexes.update
+  firebase.projects.get
+  firebasehosting.sites.update
+[debug] [2021-07-03T07:26:06.155Z] > refreshing access token with scopes: []
+[debug] [2021-07-03T07:26:06.155Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-07-03T07:26:06.443Z] <<< HTTP RESPONSE 200 {"cache-control":"no-cache, no-store, max-age=0, must-revalidate","expires":"Mon, 01 Jan 1990 00:00:00 GMT","date":"Sat, 03 Jul 2021 07:26:06 GMT","pragma":"no-cache","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-07-03T07:26:06.469Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/ngclassbook [none]
+[debug] [2021-07-03T07:26:07.290Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/ngclassbook 403
+[debug] [2021-07-03T07:26:07.290Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/ngclassbook {"error":{"code":403,"message":"The caller does not have permission","status":"PERMISSION_DENIED"}}
+[debug] [2021-07-03T07:26:07.290Z] HTTP Error: 403, The caller does not have permission
+[debug] [2021-07-03T07:26:07.673Z] FirebaseError: HTTP Error: 403, The caller does not have permission
+    at module.exports (C:\Users\milan\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:38:12)
+    at Client.doRequest (C:\Users\milan\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:238:23)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5)
+    at async Client.request (C:\Users\milan\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:96:20)
+    at async Object.getFirebaseProject (C:\Users\milan\AppData\Roaming\npm\node_modules\firebase-tools\lib\management\projects.js:290:21)
+    at async Object.getDefaultHostingSite (C:\Users\milan\AppData\Roaming\npm\node_modules\firebase-tools\lib\getDefaultHostingSite.js:8:21)
+    at async requireHostingSite (C:\Users\milan\AppData\Roaming\npm\node_modules\firebase-tools\lib\requireHostingSite.js:9:18)
+    at async Object.fn (C:\Users\milan\AppData\Roaming\npm\node_modules\firebase-tools\lib\commands\deploy.js:65:9)
+    at async C:\Users\milan\AppData\Roaming\npm\node_modules\firebase-tools\lib\command.js:169:17
+[error] 
+[error] Error: Failed to get Firebase project ngclassbook. Please make sure the project exists and your account has permission to access it.
